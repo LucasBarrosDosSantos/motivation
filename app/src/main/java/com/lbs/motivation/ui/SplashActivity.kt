@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.view.View
 import android.widget.Toast
 import com.lbs.motivation.R
+import com.lbs.motivation.infra.MotivationConstants
 import com.lbs.motivation.infra.SecurityPreferences
 import kotlinx.android.synthetic.main.activity_splash.*
 
@@ -41,7 +42,7 @@ class SplashActivity : AppCompatActivity(), View.OnClickListener {
         val name = editName.text.toString();
 
         if (name != "") {
-            securityPreferences.storeString("name", name)
+            securityPreferences.storeString(MotivationConstants.KEY.PERSON_NAME, name)
 //            use reflection for reference activity
             startActivity(Intent(this, MainActivity::class.java))
         } else {
