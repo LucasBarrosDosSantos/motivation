@@ -24,6 +24,7 @@
         android:gravity="center"
         android:hint="@string/qual_o_seu_nome"
         android:inputType="text"
+        android:id="@+id/editName"
         android:textColorHint="@color/white" />
 
     <Button
@@ -34,5 +35,6 @@
         android:background="@color/colorAccent"
         android:padding="8dp"
         android:text="@string/salvar"
+        android:id="@+id/save"
         android:textColor="@color/white" />
 </RelativeLayout>
