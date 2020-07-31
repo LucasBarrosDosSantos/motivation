@@ -13,7 +13,7 @@ class SecurityPreferences(context: Context) {
     }
 
     fun getString(key: String): String {
-//        _sharedPreferences.getString(key)
+        return _sharedPreferences.getString(key, "") ?: ""
     }
 
 }
