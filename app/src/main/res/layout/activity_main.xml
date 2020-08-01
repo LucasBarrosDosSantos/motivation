@@ -58,7 +58,9 @@
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
         android:layout_marginTop="32dp"
-        android:text="Frase!"
+        android:textAlignment="center"
+        android:layout_margin="16dp"
+        android:text="Você não é derrotado quando perde, você é derrotado quando desiste!"
         android:textSize="22sp" />
 
     <View
@@ -78,6 +80,7 @@
         android:padding="16dp"
         android:background="@color/colorPrimary"
         android:textColor="@color/white"
+        android:layout_marginBottom="20dp"
         android:text="Nova frase" />
 
 </RelativeLayout>
