@@ -27,6 +27,8 @@ class SplashActivity : AppCompatActivity(), View.OnClickListener {
 
         save.setOnClickListener(this)
 
+        verifyName()
+
 
     }
 
@@ -34,6 +36,15 @@ class SplashActivity : AppCompatActivity(), View.OnClickListener {
         val id = view.id;
         if (id == R.id.save) {
             handleSave()
+        }
+    }
+
+
+    private fun verifyName() {
+    val name = securityPreferences.getString(MotivationConstants.KEY.PERSON_NAME)
+        if(name != "") {
+            val intent = Intent(this, MainActivity::class.java)
+            startActivity(intent)
         }
     }
 
