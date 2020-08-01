@@ -78,7 +78,7 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:padding="16dp"
-        android:background="@color/colorPrimary"
+        android:background="@drawable/ripple_button"
         android:textColor="@color/white"
         android:layout_marginBottom="20dp"
         android:text="Nova frase" />
